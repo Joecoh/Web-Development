@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form to apply for internship</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter the username</label>
+            <input type="text" id = "username" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <input type="radio" id = "male" name = "gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id = "female" name = "gender" value="female">
+            <label for="female">Female</label>
+        </div> 
+        <div>
+            <input type="checkbox" id="join" name="join" value="yes">
+            <label for="join">Join our Discord Server </label>
+        </div>
+        <div>
+            <textarea placeholder="" name="comment" rows="5" cols="50"> We want to hear your tought....</textarea>
+        </div>            
+        <div>
+            <select name="title" id="job">
+                <option value="Front End Developer">Front End Developer</option>
+                <option value="Back End Developer">Back End Developer</option>
+                <option value="UI/UX">UI/UX</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
