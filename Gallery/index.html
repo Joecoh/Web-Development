@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        video {
+            width: 100%;
+            max-height: 450px;
+            border-radius: 10px;
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        img {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
+    <div class="w-full max-w-3xl bg-gray-800 rounded-lg shadow-lg p-4">
+        <h1 class="text-3xl font-bold text-center mb-4">Media Player</h1>
+        
+        <div class="relative">
+            <video id="videoPlayer" class="rounded-lg" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <h2 class="text-xl font-semibold text-center mt-6">Gallery</h2>
+        <div class="gallery-container mt-4">
+            <img class="object-cover rounded-lg shadow-md transform transition hover:scale-105" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=400&q=80" alt="Music Studio">
+            <img class="object-cover rounded-lg shadow-md transform transition hover:scale-105" src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?auto=format&fit=crop&w=400&q=80" alt="Cinema Hall">
+        </div>
+    </div>
+</body>
+</html>
