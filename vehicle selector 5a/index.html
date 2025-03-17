@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Form</title>
+</head>
+<body>
+    <form id="vehicles" onsubmit="return processVehicles()">
+        <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle" value="Car"> I have a car<br>
+        <input type="checkbox" name="vehicle" value="Motorcycle"> I have a motorcycle<br>
+        <input type="hidden" name="selectedVehicles" id="selectedVehicles" />
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function processVehicles() {
+            var vehicleTypes = document.getElementsByName("vehicle");
+            var selectedVehicleTypes = [];
+            
+            for (var i = 0; i < vehicleTypes.length; i++) {
+                if (vehicleTypes[i].checked) {
+                    selectedVehicleTypes.push(vehicleTypes[i].value);
+                }
+            }
+            
+            document.getElementById("selectedVehicles").value = selectedVehicleTypes.join(",");
+
+            return true;
+        }
+    </script>
+</body>
+</html>
