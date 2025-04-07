@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Wrap Example</title>
+    <style>
+        .container.one {
+            width: 20em;
+            overflow-wrap: break-word;
+            border: .1em solid #ff0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .container.two{
+            width: 20em;
+            overflow-wrap: normal;
+            border: .1em solid #ff0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .container.three{
+            width: 20em;
+            overflow-wrap: break-word;
+            border: .1em solid #ff0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Word Wrap Example</h2>
+    <div class="container one">
+            ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineWhenItExceedsTheContainerWidth.
+    </div>
+    <div class="container two">
+            ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineWhenItExceedsTheContainerWidth.
+    </div>
+    <div class="container three">
+            ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineWhenItExceedsTheContainerWidth.
+    </div>
+    <div class="container four">
+            ThisIsAVeryLongWordThatWillBreakAndWrapToTheNextLineWhenItExceedsTheContainerWidth.
+    </div>
+    <h1 class="box"></h1>
+</body>
+</html>
