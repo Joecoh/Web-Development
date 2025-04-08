@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: bisque;
+        width: 100vw;
+        height: 100vh;
+        animation: back backwards 3s ease-in-out  infinite  ;
+    }
+    .box{
+        background-color: brown;
+        width: 200px;
+        height: 200px;
+        /* animation-name: animation;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0, 0.86, 0, 1.07); */
+        animation: animation 5s ease-in-out  infinite reverse  ;
+    }
+    .box2{
+        background-color: rgb(48, 0, 0);
+        width: 200px;
+        height: 200px;
+        animation: animation 5s ease-in-out  infinite reverse  ;
+    }
+    @keyframes animation {
+        /* from{
+            transform: translateX(2px);
+        }
+        to{
+            transform: translateX(800px);
+        } */
+        0%{
+            transform: rotate(80deg);
+            background-color: aliceblue;
+        }
+        20%{
+            transform: rotate(-120deg);
+            background-color: rgba(249, 17, 17, 0.086);
+        }
+        40%{
+            transform: rotate(-160deg);
+            background-color: blueviolet;
+        }
+        80%{
+            transform: rotate(200deg);
+            background-color: rgb(1, 242, 69);
+        }
+        100%{
+            transform: rotate(-260deg);
+            background-color: aquamarine;
+        }
+        
+    }
+    @keyframes back {
+        0%{
+            background-color: rgb(255, 0, 0);
+        }
+        40%{
+            background-color: rgb(224, 231, 28);
+        }
+        80%{
+            background-color: rgb(40, 4, 241);
+        }
+        100%{
+            background-color: rgb(21, 233, 233);
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
